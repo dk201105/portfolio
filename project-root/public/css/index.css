@@ -1,0 +1,1018 @@
+.desktop1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.desktop1-desktop1 {
+  width: 100%;
+  height: 3848px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(39, 39, 39, 1);
+}
+ 
+.desktop1-herosection {
+  top: 239px;
+  left: 65px;
+  width: 1220.4000244140625px;
+  height: 1633px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text10 {
+  left: 117px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 110.00000238418579%;
+}
+ 
+.desktop1-text14 {
+  top: 363px;
+  left: 116px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 28.5px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-linkedinbutton {
+  top: 453px;
+  left: 116px;
+  width: 173px;
+  height: 65px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(219, 138, 116, 1);
+}
+ 
+.desktop1-text15 {
+  top: 10px;
+  left: 17px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-blogbutton {
+  top: 453px;
+  left: 326px;
+  width: 173px;
+  height: 65px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(219, 138, 116, 1);
+}
+ 
+.desktop1-text16 {
+  top: 10px;
+  left: 45px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-githubbutton {
+  top: 453px;
+  left: 536px;
+  width: 173px;
+  height: 65px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(219, 138, 116, 1);
+}
+ 
+.desktop1-text17 {
+  top: 10px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-untitleddesign31 {
+  top: 0px;
+  left: 806px;
+  width: 414px;
+  height: 518px;
+  position: absolute;
+  border-radius: 20px;
+}
+ 
+.desktop1-text18 {
+  top: 1593px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-projectssection {
+  top: 853px;
+  left: 0px;
+  width: 1440px;
+  height: 965px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-vector3 {
+  top: 0px;
+  left: -24px;
+  width: 414px;
+  height: 144px;
+  position: absolute;
+}
+ 
+.desktop1-rectangle10 {
+  top: 98px;
+  left: 0px;
+  width: 1440px;
+  height: 867px;
+  position: absolute;
+}
+ 
+.desktop1-rectangle6 {
+  top: 244px;
+  left: 178px;
+  width: 319px;
+  height: 274px;
+  position: absolute;
+  border-color: rgba(39, 39, 39, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+}
+ 
+.desktop1-rectangle7 {
+  top: 244px;
+  left: 561px;
+  width: 320px;
+  height: 274px;
+  position: absolute;
+  border-color: rgba(39, 39, 39, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+}
+ 
+.desktop1-rectangle8 {
+  top: 244px;
+  left: 945px;
+  width: 319px;
+  height: 274px;
+  position: absolute;
+  border-color: rgba(39, 39, 39, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+}
+ 
+.desktop1-text19 {
+  top: 555px;
+  left: 178px;
+  color: rgba(30, 30, 30, 1);
+  width: 319px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: 110.00000238418579%;
+}
+ 
+.desktop1-text20 {
+  top: 555px;
+  left: 562px;
+  color: rgba(30, 30, 30, 1);
+  width: 319px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: 110.00000238418579%;
+}
+ 
+.desktop1-text21 {
+  top: 555px;
+  left: 945px;
+  color: rgba(30, 30, 30, 1);
+  width: 319px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: 110.00000238418579%;
+}
+ 
+.desktop1-text22 {
+  top: 635px;
+  left: 179px;
+  color: rgba(30, 30, 30, 1);
+  width: 315px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: normal;
+}
+ 
+.desktop1-text23 {
+  top: 635px;
+  left: 564px;
+  color: rgba(30, 30, 30, 1);
+  width: 315px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: normal;
+}
+ 
+.desktop1-text24 {
+  top: 635px;
+  left: 948px;
+  color: rgba(30, 30, 30, 1);
+  width: 315px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: normal;
+}
+ 
+.desktop1-text25 {
+  top: 33px;
+  left: 66px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-navbar {
+  top: 88px;
+  left: 175px;
+  width: 1110px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text26 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text27 {
+  left: 858px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text28 {
+  left: 767px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text29 {
+  left: 1005px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-aboutme {
+  top: 1685px;
+  left: -28px;
+  width: 1468px;
+  height: 1295px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-vector2 {
+  top: -11px;
+  left: 3px;
+  width: 414px;
+  height: 144px;
+  position: absolute;
+}
+ 
+.desktop1-rectangle11 {
+  top: 86px;
+  left: 28px;
+  width: 1440px;
+  height: 867px;
+  position: absolute;
+}
+ 
+.desktop1-vector41 {
+  top: 835px;
+  left: 0px;
+  width: 414px;
+  height: 144px;
+  position: absolute;
+}
+ 
+.desktop1-text30 {
+  top: 23px;
+  left: 82px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-experience {
+  top: 791px;
+  left: 207px;
+  width: 525px;
+  height: 504px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(178, 117, 100, 1);
+}
+ 
+.desktop1-group4 {
+  top: 211px;
+  left: 73px;
+  width: 377.0000915527344px;
+  height: 247px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text31 {
+  top: 60px;
+  left: 55px;
+  color: rgba(225, 239, 230, 1);
+  width: 305px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text32 {
+  top: 200px;
+  left: 56px;
+  color: rgba(225, 239, 230, 1);
+  width: 224px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text33 {
+  top: 94px;
+  left: 55px;
+  color: rgba(225, 239, 230, 1);
+  width: 317px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-rectangle131 {
+  top: 8px;
+  left: 13.918212890625px;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  border-radius: 5px;
+}
+ 
+.desktop1-text34 {
+  left: 55.00009536743164px;
+  color: rgba(30, 30, 30, 1);
+  width: 280px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-rectangle17 {
+  top: 148px;
+  left: 13.918212890625px;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  border-radius: 5px;
+}
+ 
+.desktop1-text35 {
+  top: 140px;
+  left: 55px;
+  color: rgba(30, 30, 30, 1);
+  width: 322px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-vector42 {
+  top: 27px;
+  left: 13px;
+  width: 0px;
+  height: 85px;
+  position: absolute;
+}
+ 
+.desktop1-vector5 {
+  top: 162px;
+  left: 13px;
+  width: 0px;
+  height: 85px;
+  position: absolute;
+}
+ 
+.desktop1-text36 {
+  top: 38px;
+  color: rgba(225, 239, 230, 1);
+  width: 525px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-technicalskills {
+  top: 345px;
+  left: 767px;
+  width: 525px;
+  height: 950px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(39, 39, 39, 1);
+}
+ 
+.desktop1-text37 {
+  top: 244px;
+  left: 86px;
+  color: rgba(219, 138, 116, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text41 {
+  top: 493px;
+  left: 335px;
+  color: rgba(219, 138, 116, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-vector61 {
+  top: 325px;
+  left: 280px;
+  width: 140px;
+  height: 1px;
+  position: absolute;
+}
+ 
+.desktop1-text42 {
+  top: 351px;
+  left: 311px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  text-align: right;
+  line-height: normal;
+}
+ 
+.desktop1-text50 {
+  top: 562px;
+  left: 87px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: normal;
+}
+ 
+.desktop1-text64 {
+  top: 853px;
+  left: 358px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  text-align: right;
+  line-height: normal;
+}
+ 
+.desktop1-vector9 {
+  top: 827px;
+  left: 280px;
+  width: 140px;
+  height: 1px;
+  position: absolute;
+}
+ 
+.desktop1-vector8 {
+  top: 528px;
+  left: 316px;
+  width: 229px;
+  height: 1px;
+  position: absolute;
+}
+ 
+.desktop1-text68 {
+  top: 38px;
+  left: 86px;
+  color: rgba(225, 239, 230, 1);
+  width: 353px;
+  height: auto;
+  position: absolute;
+  font-size: 66px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text72 {
+  top: 791px;
+  left: 87px;
+  color: rgba(219, 138, 116, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 400;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-education {
+  top: 263px;
+  left: 207px;
+  width: 525px;
+  height: 477px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(69, 69, 69, 1);
+}
+ 
+.desktop1-group3 {
+  top: 151px;
+  left: 90px;
+  width: 344px;
+  height: 262px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text73 {
+  top: 205px;
+  left: 56px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text74 {
+  top: 56px;
+  left: 56px;
+  color: rgba(225, 239, 230, 1);
+  width: 288px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text75 {
+  top: 239px;
+  left: 56px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text76 {
+  top: 114px;
+  left: 56px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-group1 {
+  top: 0px;
+  left: 0px;
+  width: 284px;
+  height: 44px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text77 {
+  left: 56px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-rectangle12 {
+  top: 8px;
+  left: 13.91830825805664px;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  border-radius: 5px;
+}
+ 
+.desktop1-group2 {
+  top: 149px;
+  left: 1px;
+  width: 282px;
+  height: 44px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.desktop1-text78 {
+  left: 55px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-rectangle132 {
+  top: 8px;
+  left: 13.91830825805664px;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  border-radius: 5px;
+}
+ 
+.desktop1-text79 {
+  top: 58px;
+  left: 85px;
+  color: rgba(225, 239, 230, 1);
+  height: auto;
+  position: absolute;
+  font-size: 66px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-contact {
+  top: 3124px;
+  left: 178px;
+  width: 1084px;
+  height: 536px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  justify-content: flex-start;
+}
+ 
+.desktop1-rectangle18 {
+  top: 46px;
+  left: 0px;
+  width: 1084px;
+  height: 490px;
+  position: absolute;
+}
+ 
+.desktop1-text80 {
+  top: 141px;
+  left: 105px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 600;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-rectangle19 {
+  top: 247px;
+  left: 105px;
+  width: 875px;
+  height: 43px;
+  position: absolute;
+  border-radius: 18px;
+}
+ 
+.desktop1-rectangle20 {
+  top: 328px;
+  left: 105px;
+  width: 875px;
+  height: 43px;
+  position: absolute;
+  border-radius: 18px;
+}
+ 
+.desktop1-rectangle21 {
+  top: 409px;
+  left: 105px;
+  width: 875px;
+  height: 43px;
+  position: absolute;
+  border-radius: 18px;
+}
+ 
+.desktop1-text81 {
+  top: 256px;
+  left: 140px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text82 {
+  top: 337px;
+  left: 140px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-text83 {
+  top: 418px;
+  left: 140px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: ExtraLight;
+  text-align: left;
+  font-family: Jost;
+  font-weight: 200;
+  line-height: 110.00000238418579%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.desktop1-vector62 {
+  top: 0px;
+  left: -19px;
+  width: 264px;
+  height: 92px;
+  position: absolute;
+}
+ 
+.desktop1-rectangle22 {
+  top: 3177px;
+  left: 185px;
+  width: 255px;
+  height: 80px;
+  position: absolute;
+}
