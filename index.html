@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divya's Portfolio</title>
+<meta name="description" content="Divya Prakash: GRC, design and writing portfolio. Chennai, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,700&family=Space+Mono:ital@0;1&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fafafa;
+    --grid-light:#d7e6ee;
+    --ink:#000;
+    --card:#b5cdd8;
+    --term:#303937;
+    --prompt:#38b6ff;
+    --head:'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --body:'Space Mono', 'Courier New', monospace;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.5}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+
+  /* backgrounds */
+  .paper{
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(var(--grid-light) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-light) 1px, transparent 1px);
+    background-size:28px 28px;
+  }
+  .dark{
+    color:#fff;
+    background-color:#000;
+    background-image:
+      linear-gradient(#2a2a2a 1px, transparent 1px),
+      linear-gradient(90deg, #2a2a2a 1px, transparent 1px);
+    background-size:34px 34px;
+  }
+
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)}
+  section{position:relative;overflow:hidden}
+
+  /* type */
+  .display{font-family:var(--head);font-weight:300;letter-spacing:-.03em;line-height:1}
+  .display em{font-weight:700;font-style:italic}
+  .tag{font-family:var(--body);font-style:italic;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}
+
+  /* stars */
+  .star{position:absolute;width:clamp(22px,3vw,40px);height:auto;pointer-events:none;z-index:1}
+
+  /* hero */
+  .hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,72px)}
+  .hero h1{font-size:clamp(3rem,9vw,7.5rem);text-align:right}
+  .hero h1 span{display:block}
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,4vw,64px);margin-top:clamp(40px,7vw,88px)}
+  .tile{display:flex;flex-direction:column;align-items:center;gap:14px;text-decoration:none;transition:transform .2s}
+  .tile:hover{transform:translateY(-6px) rotate(-1deg)}
+  .tile .art{width:100%;max-width:300px;aspect-ratio:3/2;display:grid;place-items:center}
+  .tile .art svg{width:70%;height:auto}
+
+  /* link bar */
+  .linkbar{padding:20px 0}
+  .linkbar ul{list-style:none;display:flex;justify-content:space-around;flex-wrap:wrap;gap:12px}
+  .linkbar a{text-decoration:none;font-style:italic;text-transform:uppercase;letter-spacing:.6em;font-size:.85rem}
+  .linkbar a:hover{color:var(--prompt)}
+
+  /* about */
+  .about{padding:clamp(64px,9vw,120px) 0}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+  .about h2{font-size:clamp(3rem,6vw,5rem);margin-bottom:28px}
+  .about p{text-transform:uppercase;font-size:.85rem;line-height:2.1;max-width:46ch}
+  .avatar{aspect-ratio:1;max-width:460px;margin-left:auto;width:100%;display:grid;place-items:center;position:relative}
+  .avatar img{width:100%;height:100%;object-fit:contain}
+  .avatar{max-width:520px}
+  .avatar-fallback{width:72%;aspect-ratio:1;border-radius:50%;background:var(--card);border:2px solid #000;display:grid;place-items:center;font-family:var(--head);font-size:clamp(4rem,10vw,8rem);font-weight:700;font-style:italic}
+
+  /* work sections */
+  .work{padding:clamp(24px,3vw,40px) 0 clamp(64px,9vw,112px)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,4vw,56px);margin-top:clamp(8px,2vw,24px)}
+  .card{text-decoration:none;display:block}
+  .card .label{display:block;text-align:right;font-family:var(--head);font-weight:700;font-style:italic;font-size:1.15rem;margin-bottom:8px}
+  .card .box{background:var(--card);border-radius:24px;aspect-ratio:3/2;display:grid;place-items:center;transition:transform .2s, box-shadow .2s}
+  .card .box svg{width:46%;height:auto}
+  .card:hover .box{transform:translateY(-6px);box-shadow:0 10px 0 #fff3}
+  .work.writing .label{font-weight:300;font-style:normal}
+
+  .stage{position:relative;container-type:inline-size;aspect-ratio:1366/460;margin:0 calc(-1*clamp(20px,5vw,72px))}
+  .stk{position:absolute;object-fit:contain;pointer-events:none;transition:transform .4s}
+  .stage h2{position:absolute;inset:0;font-size:5.86cqw;text-align:left}
+  .stage h2 span,.stage h2 em{position:absolute;white-space:nowrap;display:block;padding:0}
+  .work .wrap{max-width:1366px}
+  .card .box img{width:52%;height:62%;object-fit:contain}
+  .tile .art img{width:100%;height:100%;object-fit:contain;transition:transform .2s}
+  .tile:hover .art img{transform:scale(1.04)}
+  .cur{display:inline-block;width:.42em;transform:rotate(-12deg);vertical-align:-.05em;margin-left:.08em}
+  .trio{display:flex;gap:12px;justify-content:flex-end;align-items:flex-end;margin-bottom:40px}
+  .trio img{width:30%;max-height:130px;object-fit:contain}
+
+  /* cyber */
+  .cyber{padding:clamp(64px,9vw,120px) 0}
+  .cyber h2{font-size:clamp(3rem,7vw,5.5rem);text-align:center;margin-bottom:clamp(32px,5vw,56px)}
+  .cyber h2 svg{display:inline-block;width:.5em;vertical-align:-.1em;margin-left:.1em}
+  .terminal{max-width:840px;margin:0 auto;background:var(--term);color:#fff;font-family:var(--mono);font-weight:300;font-size:clamp(.82rem,1.6vw,1.05rem);line-height:1.6;padding:clamp(20px,3vw,32px);box-shadow:6px 8px 0 #0003}
+  .terminal .bar{display:flex;gap:7px;margin-bottom:18px}
+  .terminal .bar i{width:11px;height:11px;border-radius:50%;background:#ffffff33}
+  .terminal .p{color:var(--prompt)}
+  .terminal .blk{margin-bottom:1.3em}
+  .terminal .blk:last-child{margin-bottom:0}
+  .cursor{display:inline-block;width:.6em;height:1.1em;background:#fff;vertical-align:-.2em;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+
+  /* contact */
+  .contact{padding:clamp(56px,8vw,96px) 0 clamp(40px,6vw,64px)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .contact h2{white-space:nowrap;font-size:clamp(3rem,7vw,6.5rem);margin-bottom:32px}
+  .contact ul{list-style:none;display:grid;gap:20px}
+  .contact li a{display:flex;align-items:center;gap:16px;font-family:var(--head);font-weight:300;font-size:1.35rem;text-decoration:none}
+  .contact li a:hover{text-decoration:underline}
+  .contact li svg{width:42px;height:42px;flex:none}
+  .sign{text-align:right;align-self:end}
+  .sign .display{font-size:clamp(2.2rem,4.6vw,3.8rem)}
+  .tagline{font-style:italic;font-size:1rem;max-width:34ch;margin-top:56px}
+
+  footer{padding:24px 0;text-align:center;font-size:.75rem;text-transform:uppercase;letter-spacing:.2em}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s, transform .7s}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.cursor{animation:none}html{scroll-behavior:auto}}
+
+  @media (max-width:760px){
+    .trio{justify-content:flex-start}
+    .tiles{gap:10px}
+    .tile .tag{font-size:.6rem;letter-spacing:0}
+    .cards{grid-template-columns:1fr;max-width:300px;margin-left:auto;margin-right:auto}
+    .hero .star:nth-of-type(1),.hero .star:nth-of-type(3){display:none}
+    .stage{margin:0 -12px}
+    .about-grid,.contact-grid{grid-template-columns:1fr}
+    .avatar{margin:0 auto;max-width:300px}
+    .hero h1{text-align:left}
+    .linkbar a{letter-spacing:.3em}
+    .sign{text-align:left}
+  }
+</style>
+</head>
+<body>
+
+
+<!-- HERO -->
+<section class="hero paper" id="top">
+  <img class="star" src="images/star.png" alt="" style="top:14%;left:13%">
+  <img class="star" src="images/star.png" alt="" style="top:6%;right:7%">
+  <img class="star" src="images/star.png" alt="" style="top:42%;right:46%">
+  <div class="wrap">
+    <h1 class="display reveal"><span>welcome to divya’s</span><span><em>portfolio</em></span></h1>
+
+    <div class="tiles">
+      <a class="tile reveal" href="#design">
+        <div class="art"><img src="images/palette.png" alt="Paint palette"></div>
+        <span class="tag">[design]</span>
+      </a>
+      <a class="tile reveal" href="#cybersecurity">
+        <div class="art"><img src="images/laptop.png" alt="Laptop showing code"></div>
+        <span class="tag">[cybersecurity]</span>
+      </a>
+      <a class="tile reveal" href="#writing">
+        <div class="art"><img src="images/writing.png" alt="Hands writing in a notebook"></div>
+        <span class="tag">[writing]</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LINK BAR -->
+<nav class="linkbar dark" aria-label="Profiles">
+  <ul>
+    <li><a href="https://github.com/dk201105" target="_blank" rel="noopener">[github]</a></li>
+    <li><a href="https://www.linkedin.com/in/divya-keren-prakash" target="_blank" rel="noopener">[linkedin]</a></li>
+    <li><a href="https://bytesandwrites.wordpress.com" target="_blank" rel="noopener">[blog]</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT -->
+<section class="about paper" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <h2 class="display">about <em>me</em></h2>
+      <p>I'm Divya! CS graduate from Women's Christian College, Chennai, now working in governance, risk and compliance (GRC). Somewhere between the code, the CTFs, and the editorial board meetings, I picked up a habit of treating every project like a page in the same notebook. This is that notebook.</p>
+    </div>
+    <div class="avatar reveal">
+      <img src="images/avatar.png" alt="Illustrated portrait of Divya">
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="work dark" id="design">
+  <div class="wrap">
+    <div class="stage" aria-hidden="false">
+      <img class="stk" src="images/camera.png" alt="" style="left:83.24%;top:39.35%;width:18.30%;height:54.35%;">
+      <img class="stk" src="images/lily.png" alt="" style="left:62.45%;top:-0.22%;width:19.99%;height:73.04%;">
+      <img class="stk" src="images/phone.png" alt="" style="left:84.77%;top:1.52%;width:11.86%;height:52.83%;transform:rotate(20deg);">
+      <img class="stk" src="images/coffee.png" alt="" style="left:6.52%;top:9.35%;width:12.74%;height:30.87%;">
+      <img class="stk" src="images/earphones.png" alt="" style="left:48.61%;top:9.13%;width:14.57%;height:43.26%;transform:rotate(15.7deg);">
+      <img class="stk" src="images/cookie.png" alt="" style="left:16.62%;top:36.30%;width:10.32%;height:41.30%;">
+      <img class="stk" src="images/candle.png" alt="" style="left:20.64%;top:1.30%;width:15.74%;height:46.74%;">
+      <img class="stk" src="images/wax-seal.png" alt="" style="left:73.28%;top:56.96%;width:9.15%;height:25.65%;">
+      <img class="stk" src="images/lily-2.png" alt="" style="left:-0.73%;top:24.57%;width:19.99%;height:73.04%;transform:scale(-1,-1);">
+      <img class="stk" src="images/dolphin.png" alt="" style="left:26.35%;top:64.13%;width:8.20%;height:18.26%;">
+      <img class="stk" src="images/gem-flower.png" alt="" style="left:37.26%;top:13.91%;width:6.59%;height:19.13%;">
+      <img class="stk" src="images/heart.png" alt="" style="left:79.94%;top:9.35%;width:6.59%;height:18.26%;">
+      <h2 class="display"><span class="h-a" style="left:28.11%;top:37.83%">[design]</span><em class="h-b" style="left:37.26%;top:53.26%">UI/UX &amp; Branding</em></h2>
+    </div>
+    <div class="cards">
+      <a class="card reveal" href="#design"><span class="label">[branding]</span>
+        <div class="box"><img src="images/bust.png" alt=""></div></a>
+      <a class="card reveal" href="#design"><span class="label">[ui/ux]</span>
+        <div class="box"><img src="images/smiley.png" alt=""></div></a>
+      <a class="card reveal" href="#design"><span class="label">[graphic]</span>
+        <div class="box"><img src="images/cart.png" alt=""></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- CYBERSECURITY / GRC -->
+<section class="cyber paper" id="cybersecurity">
+  <div class="wrap">
+    <h2 class="display reveal">[cybersecurity]<img class="cur" src="images/cursor.png" alt=""></h2>
+    <div class="terminal reveal" role="region" aria-label="About my security work">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="blk"><span class="p">$</span> whoami<br>divya · full-stack background, now working in GRC</div>
+      <div class="blk"><span class="p">$</span> cat current-focus.txt<br>risk assessments · security policy · ISO 27001 · GDPR · CompTIA Security+ SY0-701</div>
+      <div class="blk"><span class="p">$</span> ls ctfs/<br>picoCTF · LYKN Corp · TryHackMe Advent of Cyber (24/24)</div>
+      <div class="blk"><span class="p">$</span> <span class="cursor"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section class="work writing dark" id="writing">
+  <div class="wrap">
+    <div class="stage" aria-hidden="false">
+      <img class="stk" src="images/typewriter.png" alt="" style="left:69.40%;top:39.57%;width:17.13%;height:50.87%;">
+      <img class="stk" src="images/quill.png" alt="" style="left:48.02%;top:5.65%;width:11.49%;height:45.43%;">
+      <img class="stk" src="images/pens.png" alt="" style="left:12.66%;top:33.26%;width:25.48%;height:75.65%;transform:rotate(-54.9deg);">
+      <img class="stk" src="images/papers.png" alt="" style="left:57.69%;top:10.22%;width:15.37%;height:45.65%;">
+      <img class="stk" src="images/cat.png" alt="" style="left:73.06%;top:8.48%;width:13.91%;height:41.52%;">
+      <img class="stk" src="images/notebook.png" alt="" style="left:19.11%;top:8.70%;width:14.49%;height:43.04%;transform:rotate(-16.8deg);">
+      <img class="stk" src="images/boombox.png" alt="" style="left:8.49%;top:26.74%;width:12.96%;height:38.48%;">
+      <img class="stk" src="images/guitar.png" alt="" style="left:-5.78%;top:-5.65%;width:22.84%;height:67.83%;transform:rotate(33.1deg);">
+      <img class="stk" src="images/wax-seal-2.png" alt="" style="left:-0.66%;top:60.43%;width:9.15%;height:25.65%;">
+      <img class="stk" src="images/rose.png" alt="" style="left:12.01%;top:64.57%;width:5.27%;height:17.61%;">
+      <img class="stk" src="images/brooch.png" alt="" style="left:12.59%;top:13.04%;width:5.05%;height:15.22%;">
+      <img class="stk" src="images/star-sticker.png" alt="" style="left:55.42%;top:35.43%;width:5.49%;height:15.65%;">
+      <img class="stk" src="images/stamp.png" alt="" style="left:88.36%;top:10.43%;width:8.05%;height:30.43%;">
+      <img class="stk" src="images/teacup.png" alt="" style="left:84.33%;top:54.35%;width:12.08%;height:20.43%;">
+      <h2 class="display"><span class="h-a" style="left:33.75%;top:30.22%">[writing]</span><em class="h-b" style="left:37.70%;top:50.00%">content &amp; editing</em></h2>
+    </div>
+    <div class="cards">
+      <a class="card reveal" href="#writing"><span class="label">[UNCCD]</span>
+        <div class="box"><img src="images/trophy.png" alt=""></div></a>
+      <a class="card reveal" href="https://bytesandwrites.wordpress.com" target="_blank" rel="noopener"><span class="label">[Articles]</span>
+        <div class="box"><img src="images/folder.png" alt=""></div></a>
+      <a class="card reveal" href="#writing"><span class="label">[Kindred Tales Publishing]</span>
+        <div class="box"><img src="images/typewriter-icon.png" alt=""></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact paper" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <h2 class="display">contact me:</h2>
+      <ul>
+        <li><a href="mailto:dkprakashwork@gmail.com">
+          <svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="20" fill="#000"/><path d="M10 14h22v14H10Z M10 14l11 9 11-9" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+          [dkprakashwork@gmail.com]</a></li>
+        <li><a href="https://www.linkedin.com/in/divya-keren-prakash" target="_blank" rel="noopener">
+          <svg viewBox="0 0 42 42"><rect x="1" y="1" width="40" height="40" rx="4" fill="#000"/><path d="M11 17h5v15h-5Z M13.5 9.5a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6Z M19 17h5v2.2c.8-1.4 2.4-2.6 4.8-2.6 4.2 0 5.2 2.7 5.2 6.4V32h-5v-7.8c0-1.9-.3-3.4-2.2-3.4s-2.8 1.4-2.8 3.4V32h-5Z" fill="#fff"/></svg>
+          [Divya Prakash]</a></li>
+      </ul>
+      <p class="tagline">A digitized collection of things and core memories that live rent-free in my mind.</p>
+    </div>
+    <div class="sign reveal">
+      <div class="trio"><img src="images/palette.png" alt=""><img src="images/laptop.png" alt=""><img src="images/writing.png" alt=""></div>
+      <p class="display">welcome to my</p>
+      <p class="display"><em>brain 🧠</em></p>
+    </div>
+  </div>
+</section>
+
+<footer class="dark">© 2026 Divya Prakash · Chennai</footer>
+
+<script>
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach(el=> io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
